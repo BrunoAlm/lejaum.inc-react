@@ -46,6 +46,14 @@ module.exports = {
         fontWeight: 500,
       }],
 
+      'home': [76, {
+        fontWeight: 500,
+      }],
+
+      'home-bold': [76, {
+        fontWeight: 900,
+      }],
+
     },
     extend: {
       fontFamily: {
