@@ -46,11 +46,29 @@ module.exports = {
         fontWeight: 500,
       }],
 
-      'home': [40, {
+      'sub1': [16, {
+        fontWeight: 400,
+        letterSpacing: .15,
+        lineHeight: '24px',
+      }],
+
+      'body1': [16, {
+        fontWeight: 400,
+        letterSpacing: .44,
+        lineHeight: '28px',
+      }],
+      
+      'body2': [14, {
+        fontWeight: 400,
+        letterSpacing: .25,
+        lineHeight: '20px',
+      }],
+
+      'home': [60, {
         fontWeight: 500,
       }],
 
-      'home-bold': [40, {
+      'home-bold': [60, {
         fontWeight: 900,
       }],
 
@@ -77,7 +95,7 @@ module.exports = {
       animation: {
         quica: 'quica 3s ease-in-out infinite',
         pulse2: 'pulse2 3s cubic-bezier(0.3, 0, 0.2, 1) infinite;',
-        viraDeLadin: 'viraDeLadin 3s cubic-bezier(0.3, 0, 0.2, 1) ;',
+        viraDeLadin: 'viraDeLadin 3s cubic-bezier(0.3, 0, 0.2, 1) forwards;',
       }
 
     },
