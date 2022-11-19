@@ -46,11 +46,11 @@ module.exports = {
         fontWeight: 500,
       }],
 
-      'home': [76, {
+      'home': [40, {
         fontWeight: 500,
       }],
 
-      'home-bold': [76, {
+      'home-bold': [40, {
         fontWeight: 900,
       }],
 
@@ -59,6 +59,27 @@ module.exports = {
       fontFamily: {
         'georama': ['Georama', 'sans-serif'],
       },
+      keyframes: {
+        quica: {
+          '0%, 100%': { transform: 'translateY(20px)'},
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        viraDeLadin: {
+          '0%': { transform: 'translateX(0px)'},
+          '100%': { transform: 'translateX(100px)' },
+        },
+        pulse2: {
+          '50%': {
+            opacity: '.5'
+          }
+        }
+      },
+      animation: {
+        quica: 'quica 3s ease-in-out infinite',
+        pulse2: 'pulse2 3s cubic-bezier(0.3, 0, 0.2, 1) infinite;',
+        viraDeLadin: 'viraDeLadin 3s cubic-bezier(0.3, 0, 0.2, 1) ;',
+      }
+
     },
   },
   plugins: [],
