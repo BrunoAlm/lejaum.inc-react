@@ -4,10 +4,10 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "npm install && npm run build",
+  "updateContentCommand": "cd lejaum.me && npm install && npm run build",
   "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "npm run dev"
+    "server": "cd lejaum.me && npm run dev"
   },
   "customizations": {
     "codespaces": {

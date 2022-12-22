@@ -64,11 +64,17 @@ module.exports = {
         lineHeight: '20px',
       }],
 
-      'home': [60, {
+      'body2-negrito': [14, {
+        fontWeight: 600,
+        letterSpacing: .25,
+        lineHeight: '20px',
+      }],
+
+      'home': [80, {
         fontWeight: 500,
       }],
 
-      'home-bold': [60, {
+      'home-bold': [80, {
         fontWeight: 900,
       }],
 
