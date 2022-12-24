@@ -1,4 +1,3 @@
-import Botao from "../../components/botao";
 import imagemAstronauta from "../../assets/lejaum/astronauta-ss.png"
 import imagemSombra from "../../assets/lejaum/sombra.png"
 import iconGrafico from "../../assets/lejaum/grafico_icon.webp"
