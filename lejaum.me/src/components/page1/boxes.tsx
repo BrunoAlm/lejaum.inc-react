@@ -1,4 +1,3 @@
-import { sliderClasses } from "@mui/material";
 import Image from "next/image";
 
 export default function Boxes({ text = '', text_negrito = '', iconPath = Image.prototype }) {
@@ -12,8 +11,12 @@ export default function Boxes({ text = '', text_negrito = '', iconPath = Image.p
                     />
                 </div>
                 <div className="pl-2">
-                    <p className="inline text-branquin text-body2 text-justify font-georama">{text}</p>
-                    <p className="inline text-branquin text-body2-negrito text-justify font-georama">{text_negrito}</p>
+                    <p className="block text-branquin text-body2 text-justify font-georama">
+                        {text}
+                        <p className=" inline font-georama text-body2-negrito">
+                            {text_negrito}
+                        </p>
+                    </p>
                 </div>
             </div>
         </>

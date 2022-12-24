@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.tsx",
   ],
+
   theme: {
     colors: {
       'pretao': '#1A1918',
@@ -61,7 +62,7 @@ module.exports = {
       'body2': [14, {
         fontWeight: 400,
         letterSpacing: .25,
-        lineHeight: '20px',
+        lineHeight: '15px',
       }],
 
       'body2-negrito': [14, {
