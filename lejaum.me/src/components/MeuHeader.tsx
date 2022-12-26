@@ -1,6 +1,5 @@
-import LogoLejaum from '../assets/lejaum/logo-w.svg';
 import * as React from 'react';
-import Botao from './botao';
+import Botao from './button';
 import useCheckMobileScreen from './deviceCheck/checkMobileScreen';
 import useCheckTabletScreen from './deviceCheck/checkTabletScreen';
 
@@ -12,9 +11,9 @@ export default function MeuHeader() {
     const isTablet = useCheckTabletScreen();
     return (
         <>
-            <div className={`h-[80px] w-screen px-12 sm:px-20 sm:h-[60px] bg-laranjaum flex items-center justify-between`}>
+            <div className={`h-[80px] min-w-full m-0 px-12 sm:px-20 sm:h-[60px] bg-laranjaum flex items-center justify-between`}>
                 <a href='http://localhost:3000/' target={'_self'} className='flex cursor-pointer items-center'>
-                    <LogoLejaum />
+                    <img src="/assets/lejaum/logo-w.svg" alt="logo-lejaum" />
                     <p className='font-georama text-h4 text-branquin italic'>lejaum</p>
                 </a>
                 <div className={`z-[11] right-0  transform transition-all duration-500 ${drawerAberto ? '-translate-x-[270px]' : ''}`} >

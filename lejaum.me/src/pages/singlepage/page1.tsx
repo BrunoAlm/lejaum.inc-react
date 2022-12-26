@@ -6,22 +6,26 @@ import iconSino from "../../assets/lejaum/sino_icon.webp"
 import iconMao from "../../assets/lejaum/mao_icon.webp"
 import Image from "next/image";
 import Boxes from "../../components/page1/boxes";
-import Botao from "../../components/botao"
+import CustomButton from "../../components/button"
+import CustomIconButton from "../../components/icon_button"
 
 export default function Page1() {
     return (
         <>
-            <div className="w-screen h-[calc(100vh-130px)] sm:h-[calc(100vh-60px)] bg-pretao flex flex-col justify-center items-center">
-                <div className="mb-8 border border-branquin">
+            <div className=" min-w-full h-[calc(100vh-80px)] sm:h-[calc(100vh-60px)] bg-pretao flex flex-col justify-center items-center">
+                <div className="w-fit mb-8 border border-branquin border-dashed">
                     <p className="text-home text-laranjaum text-center uppercase line-through font-georama">Não vendemos Serviços,</p>
                     <p className="text-home font-black text-laranjaum text-center uppercase font-georama">nós entregamos soluções!</p>
                 </div>
-                <div className="h-fit w-11/12 border border-branquin flex flex-wrap justify-center items-center content-center gap-4">
-                      <Botao text="Saber Mais" />  
-                      <Botao text="Portfólio" />  
-                      <Botao text="Ver Planos" />  
-                      <Botao text="Whatsapp" />  
+                <div className="w-full border border-branquin border-dashed flex flex-wrap justify-center items-center content-center gap-4">
+                    <CustomIconButton imageUrl="/assets/icons/arrow-down.svg" text="Saber Mais" />
+                    <CustomIconButton imageUrl="/assets/icons/arrow-down.svg" text="Portfólio" />
+                    <CustomIconButton imageUrl="/assets/icons/credit-card.svg" text="Ver Planos" />
+                    <CustomIconButton imageUrl="/assets/icons/whatsapp.svg" text="Whatsapp" />
                 </div>
+
+
+
                 {/* <div className="">
                     <p className="text-home text-laranjaum uppercase line-through -mb-5 font-georama">Não vendemos Serviços,</p>
                     <p className="text-home-bold text-laranjaum uppercase font-georama">nós entregamos soluções!</p>
@@ -67,11 +71,6 @@ export default function Page1() {
                     </div>
                 </div> */}
             </div>
-
-            <div className="h-screen w-screen bg-laranjaum">
-
-            </div>
-
         </>
     )
 }
