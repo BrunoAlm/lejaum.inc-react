@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import * as React from 'react';
 import Botao from './button';
 import useCheckMobileScreen from './deviceCheck/checkMobileScreen';
@@ -13,7 +14,13 @@ export default function MeuHeader() {
         <>
             <div className={`h-[80px] min-w-full m-0 px-12 sm:px-20 sm:h-[60px] bg-laranjaum flex items-center justify-between`}>
                 <a href='http://localhost:3000/' target={'_self'} className='flex cursor-pointer items-center'>
-                    <img src="/assets/lejaum/logo-w.svg" alt="logo-lejaum" />
+                    {/* <img src="/assets/lejaum/logo-w.svg" alt="logo-lejaum" /> */}
+                    <Image
+                        src="/assets/lejaum/logo-w.svg"
+                        alt='logo-lejaum'
+                        width={30}
+                        height={30}
+                    />
                     <p className='font-georama text-h4 text-branquin italic'>lejaum</p>
                 </a>
                 <div className={`z-[11] right-0  transform transition-all duration-500 ${drawerAberto ? '-translate-x-[270px]' : ''}`} >

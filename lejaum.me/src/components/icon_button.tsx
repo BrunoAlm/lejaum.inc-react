@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Whatsapp from "../assets/icons/whatsapp.svg";
 export default function CustomIconButton({ text = '', href = '', target = '_self', onClick = () => { }, imageUrl = "" }) {
     return (
         <>
