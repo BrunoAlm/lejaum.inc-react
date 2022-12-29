@@ -6,13 +6,13 @@ import CustomIconButton from "../../components/icon_button"
 export default function Page1() {
     return (
         <>
-            <div className=" min-w-full h-[calc(100vh-80px)] sm:h-[calc(100vh-60px)] bg-pretao flex flex-col justify-center items-center">
+            <div className="h-[calc(100vh-80px)] sm:h-[calc(100vh-60px)] bg-pretao">
                 <div className="flex flex-col justify-center items-start">
                     <div className="w-fit mb-8 border border-branquin border-dashed">
                         <p className="text-home text-laranjaum text-center uppercase line-through font-georama">Não vendemos Serviços,</p>
                         <p className="text-home font-black text-laranjaum text-center uppercase font-georama">nós entregamos soluções!</p>
                     </div>
-                    <div className="w-full border border-branquin border-dashed flex flex-wrap justify-center items-center content-center gap-4">
+                    <div className=" border border-branquin border-dashed flex flex-wrap justify-center items-center content-center gap-4">
                         <CustomIconButton imageUrl="/assets/icons/arrow-down.svg" text="Saber Mais" />
                         <CustomIconButton imageUrl="/assets/icons/arrow-down.svg" text="Portfólio" />
                         <CustomIconButton imageUrl="/assets/icons/credit-card.svg" text="Ver Planos" />
@@ -21,7 +21,7 @@ export default function Page1() {
                 </div>
 
                 {/* só no desktop */}
-                <div className="invisible sm:visible">
+                <div className="hidden sm:block">
                     <p className="text-branquin font-georama ">O que nós oferecemos:</p>
                     <div className="flex gap-2">
                         <Boxes

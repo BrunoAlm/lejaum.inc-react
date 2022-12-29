@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <MeuHead />
-      <MeuHeader/>
+      <MeuHeader />
       <Page1 />
       <Page2 />
     </>

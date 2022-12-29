@@ -43,7 +43,14 @@ export default function MeuHeader() {
             {drawerAberto && (
                 <div className='flex'>
                     <div className={`absolute z-20 top-0 right-0 transform transition-all duration-500 ${drawerAberto ? `${isMobile ? 'w-[70%]' : isTablet ? 'w-[50%]' : 'w-1/4'}` : 'w-0 h-0'} bg-pretao h-full flex flex-col items-center justify-center`}>
-                        <p>puta que pariu</p>
+                        <div className='w-[50px] h-[50px] bg-laranjaum rounded-[10px] flex items-center justify-center'>
+                            <Image
+                                src="/assets/lejaum/logo-w.svg"
+                                alt='logo-lejaum'
+                                width={35.8}
+                                height={35}
+                            />
+                        </div>
                         <Botao href='#' text='Início' onClick={AbreDrawer} />
                         <div className='h-3'></div>
                         <Botao text='Sobre' onClick={AbreDrawer} />
