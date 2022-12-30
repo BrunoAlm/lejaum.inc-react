@@ -12,7 +12,9 @@ export default function MeuHeader() {
     const isTablet = useCheckTabletScreen();
     return (
         <>
-            <div className={`h-[80px] min-w-full m-0 px-12 sm:px-20 sm:h-[60px] bg-laranjaum flex items-center justify-between`}>
+            {
+                /* w-[calc(100vw-20px)] 100vw - largura da barra lateral */}
+            <div className={`h-[80px] w-full m-0 px-12 sm:px-20 sm:h-[60px] bg-laranjaum flex items-center justify-between`}>
                 <a href='http://localhost:3000/' target={'_self'} className='flex cursor-pointer items-center'>
                     {/* <img src="/assets/lejaum/logo-w.svg" alt="logo-lejaum" /> */}
                     <Image
