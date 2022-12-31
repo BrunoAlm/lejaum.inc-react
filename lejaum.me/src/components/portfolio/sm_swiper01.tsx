@@ -18,6 +18,7 @@ export default function SmSwiper01() {
             slidesPerView={1.67}
             spaceBetween={13}
             loop={true}
+            loopedSlides={10}
             className={'my-2 drop-shadow-card'}
             breakpoints={{
                 640: {
