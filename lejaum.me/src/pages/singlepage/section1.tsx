@@ -1,7 +1,7 @@
 
-import Boxes from '../../components/page1/boxes';
+import Boxes from '../../components/page1/cards';
 import FilledButton from '../../components/buttons/lejaum_filled_button';
-import BoxSwiper from '../../components/BoxSwiper';
+import CardSwiper from '../../components/page1/card_swiper';
 
 
 export default function Section1() {
@@ -16,7 +16,7 @@ export default function Section1() {
                 </div>
                 {/* Carrossel com textos de imagens */}
                 <div className='w-full  my-8 sm:hidden '>
-                    <BoxSwiper />
+                    <CardSwiper />
                 </div>
                 {/* Botão de chamada que da scroll para o portfólio */}
                 <FilledButton

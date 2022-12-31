@@ -5,16 +5,16 @@ import SwiperCore, { Autoplay } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 
-import Boxes from './page1/boxes';
+import Boxes from '../page1/cards';
 
-export default function BoxSwiper() {
+export default function IdVisualSwiper() {
 
-    SwiperCore.use([Autoplay])
+    SwiperCore.use([Autoplay]) 
 
     return (
         <Swiper
             slidesPerView={1.05}
-            autoplay={{ delay: 2000 }}
+            autoplay={{ delay: 5000 }}
         >
             <SwiperSlide>
                 <Boxes

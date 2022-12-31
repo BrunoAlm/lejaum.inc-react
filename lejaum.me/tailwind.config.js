@@ -10,7 +10,7 @@ module.exports = {
       'laranjaum': '#ff5400',
       'branquin': '#f4f4f4',
     },
-    
+
     fontSize: {
       'h1': [96, {
         letterSpacing: -1.5,
@@ -59,8 +59,8 @@ module.exports = {
         // letterSpacing: .44,
         lineHeight: '18px',
       }],
-      
-      'body2': [14, {
+
+      'body2': [11, {
         fontWeight: 400,
         letterSpacing: .25,
         lineHeight: '15px',
@@ -74,12 +74,13 @@ module.exports = {
 
       'home': [36, {
         fontWeight: 500,
+        lineHeight: '37.01px',
       }],
       'md-home': [80, {
         fontWeight: 500,
       }],
 
-      
+
 
     },
     extend: {
@@ -88,11 +89,11 @@ module.exports = {
       },
       keyframes: {
         quica: {
-          '0%, 100%': { transform: 'translateY(20px)'},
+          '0%, 100%': { transform: 'translateY(20px)' },
           '50%': { transform: 'translateY(-20px)' },
         },
         viraDeLadin: {
-          '0%': { transform: 'translateX(0px)'},
+          '0%': { transform: 'translateX(0px)' },
           '100%': { transform: 'translateX(100px)' },
         },
         pulse2: {
@@ -105,6 +106,14 @@ module.exports = {
         quica: 'quica 3s ease-in-out infinite',
         pulse2: 'pulse2 3s cubic-bezier(0.3, 0, 0.2, 1) infinite;',
         viraDeLadin: 'viraDeLadin 3s cubic-bezier(0.3, 0, 0.2, 1) forwards;',
+      },
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '4xl': [
+          '0 35px 35px rgba(0, 0, 0, 0.25)',
+          '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ],
+        'card': '0 1.52px 7.63px rgba(0, 0, 0, 255)',
       }
 
     },
