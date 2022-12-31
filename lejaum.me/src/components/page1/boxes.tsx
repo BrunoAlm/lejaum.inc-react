@@ -11,7 +11,7 @@ export default function Boxes({ text = '', text_negrito = '', iconPath = '' }) {
                         height={25}
                     />
                 <div className="pl-4">
-                    <p className="block text-branquin text-body1 text-justify font-georama">{text} <strong>{text_negrito}</strong></p>
+                    <p className="block text-branquin text-body1 text-left font-georama">{text} <strong>{text_negrito}</strong></p>
                 </div>
             </div>
         </>
