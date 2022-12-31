@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import HeadHTML from '../components/head-html';
-import HeaderSection from '../components/MeuHeader';
-import HomeSection from './singlepage/page1';
-import Section2 from './singlepage/page2';
+import HeaderSection from '../components/top_bar';
+import HomeSection from './singlepage/section1';
+import Section2 from './singlepage/section2';
 
 export default function Home() {
   return (

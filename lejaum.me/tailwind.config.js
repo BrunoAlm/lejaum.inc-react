@@ -27,7 +27,7 @@ module.exports = {
         fontWeight: 400,
       }],
 
-      'h4': [34, {
+      'h4': [30, {
         letterSpacing: 0.25,
         fontWeight: 400,
       }],
@@ -45,6 +45,7 @@ module.exports = {
       'BUTTON': [14, {
         letterSpacing: 1,
         fontWeight: 500,
+        lineHeight: '16.72px',
       }],
 
       'sub1': [16, {
@@ -53,10 +54,10 @@ module.exports = {
         lineHeight: '24px',
       }],
 
-      'body1': [16, {
-        fontWeight: 400,
-        letterSpacing: .44,
-        lineHeight: '28px',
+      'body1': [18, {
+        fontWeight: 500,
+        // letterSpacing: .44,
+        lineHeight: '18px',
       }],
       
       'body2': [14, {
@@ -71,7 +72,7 @@ module.exports = {
         lineHeight: '20px',
       }],
 
-      'home': [40, {
+      'home': [36, {
         fontWeight: 500,
       }],
       'md-home': [80, {
