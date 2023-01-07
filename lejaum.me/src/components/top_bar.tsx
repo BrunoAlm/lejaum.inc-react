@@ -1,8 +1,5 @@
 import Image from 'next/image';
 import * as React from 'react';
-import Botao from './buttons/lejaum_border_button';
-import useCheckMobileScreen from './deviceCheck/checkMobileScreen';
-import useCheckTabletScreen from './deviceCheck/checkTabletScreen';
 import TopbarDrawer from './drawer';
 
 export default function TopBar() {

@@ -6,21 +6,30 @@ import Logo from "./logo";
 export default function TopbarDrawer({ drawerAberto = false, AbreDrawer = () => { } }) {
     return <>
         <div className='flex  '>
-            <div className={`fixed z-[10000] gap-[22px] top-0 right-0 transform transition-all duration-500 ${drawerAberto ? 'w-[70%] sm:w-[50%]' : 'w-0 h-0'} bg-pretao h-full flex flex-col items-center justify-center`}>
+            <div className={`fixed z-[10000] gap-[22px] top-0 right-0 transform transition-all duration-500 ${drawerAberto ? 'w-[70%] sm:w-[50%]' : 'w-0 h-0'} bg-branquin dark:bg-pretao h-full flex flex-col items-center justify-center`}>
                 <Logo />
                 <BorderButton href='#' text='Início' onClick={AbreDrawer} />
                 <BorderButton text='Sobre' onClick={AbreDrawer} />
                 <BorderButton href="#portfolio" text='Portfólio' onClick={AbreDrawer} />
-                <BorderButton text='Ver Planos' onClick={AbreDrawer} />
+                <BorderButton href="#solucoes" text='Ver Planos' onClick={AbreDrawer} />
                 <BorderButton text='Whastapp' onClick={AbreDrawer} />
-                <BorderButton text='Avaliações' onClick={AbreDrawer} />
+                <BorderButton href="#avaliacoes" text='Avaliações' onClick={AbreDrawer} />
                 <p className="text-center text-branquin text-BUTTON uppercase font-georama">Alterar tema:</p>
                 <div className="flex gap-2">
-                    <LeadingIconButton href="#" imageUrl="/assets/icons/sun-outline.svg" text="claro" />
-                    <TrailingIconButton href="#" imageUrl="/assets/icons/moon-outline.svg" text="escuro" />
+                    <LeadingIconButton onClick={lightTheme} imageUrl="/assets/icons/sun-outline.svg" text="claro" />
+                    <TrailingIconButton onClick={darkTheme} imageUrl="/assets/icons/moon-outline.svg" text="escuro" />
                 </div>
             </div>
             <div className='z-[9999] fixed bg-branquin bg-opacity-5 backdrop-blur-sm min-h-full min-w-full top-0 right-0' onClick={AbreDrawer}></div>
         </div>
     </>
+}
+
+export function lightTheme() {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme","light");
+}
+export function darkTheme() {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme","dark");
 }

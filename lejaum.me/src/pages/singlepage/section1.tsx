@@ -1,14 +1,11 @@
-
-import Boxes from '../../components/page1/cards';
 import FilledButton from '../../components/buttons/lejaum_filled_button';
 import CardSwiper from '../../components/page1/card_swiper';
 
-
-export default function Section1() {
+export default function Section1({ id = "" }) {
     return (
         <>
             {/* Tela de entrada do usuário */}
-            <div className="h-screen w-full sm:h-[calc(100vh-60px)] bg-pretao flex flex-col justify-center items-center">
+            <div id={id} className="h-screen w-full sm:h-[calc(100vh-60px)] bg-pretao flex flex-col justify-center items-center">
                 {/* Texto principal */}
                 <div className="w-fit ">
                     <p className="text-home text-laranjaum text-center uppercase line-through font-georama">Não vendemos Serviços,</p>

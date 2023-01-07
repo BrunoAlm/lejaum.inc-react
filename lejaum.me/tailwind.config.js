@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./src/**/*.tsx",
   ],
@@ -9,6 +10,7 @@ module.exports = {
       'pretao': '#1A1918',
       'laranjaum': '#ff5400',
       'branquin': '#f4f4f4',
+      'quase-black': '#201F1E',
       'quase-cinza': '#322F2E',
       'cinza': '#7D7D7D',
     },

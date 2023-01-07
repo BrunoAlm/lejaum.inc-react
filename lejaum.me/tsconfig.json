@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/_document.tsx", "src/components/swiper.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/_document.tsx", "src/components/swiper.js", "src/js/theme.js"],
   "exclude": ["node_modules"]
 }
