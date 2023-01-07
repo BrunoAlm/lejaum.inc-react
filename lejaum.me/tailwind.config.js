@@ -9,6 +9,8 @@ module.exports = {
       'pretao': '#1A1918',
       'laranjaum': '#ff5400',
       'branquin': '#f4f4f4',
+      'quase-cinza': '#322F2E',
+      'cinza': '#7D7D7D',
     },
 
     fontSize: {
