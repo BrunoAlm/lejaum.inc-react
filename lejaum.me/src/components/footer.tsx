@@ -4,7 +4,7 @@ export default function Footer() {
             {/* dados da empresa */}
             <div>
                 <p className="text-cinza font-georama text-body2 text-center">Lejaum Marketing e Design LTDA</p>
-                <p className="text-cinza font-georama text-body2  text-center">45.522.499/0001-35</p>
+                {/* <p className="text-cinza font-georama text-body2  text-center">45.522.499/0001-35</p> */}
             </div>
             {/* redes sociais */}
             <div className="flex items-center gap-1 underline text-cinza font-georama text-body2">
