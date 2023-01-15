@@ -2,11 +2,7 @@ import ExpandablePanel from "../../components/expansivePanel/expansive_panel";
 import { panelData } from "../../components/expansivePanel/panel_data";
 
 export default function Section4({ id = "" }) {
-
-
-    
     var ultimoClicado = ['']
-
     return (
         <>
             {/* Início das Soluções */}
@@ -15,7 +11,7 @@ export default function Section4({ id = "" }) {
                 <p className="text-body2 text-branquin text-center font-georama">Veja o porque somos a melhor solução para a sua empresa:</p>
 
                 <div className="flex flex-col gap-3 my-4 items-center">
-                    {panelData.map(({ id, title, content }) => (<ExpandablePanel id={id} ult_click={ultimoClicado} title={title} content={content} />))}
+                    {panelData.map(({ id, title, content }) => (<ExpandablePanel id={id} key={null} ult_click={ultimoClicado} title={title} content={content} />))}
                 </div>
             </div> {/* FINAL */}
         </>
