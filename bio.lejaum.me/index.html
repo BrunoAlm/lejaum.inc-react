@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somos a melhor agência de marketing e design do universo!</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FF5400;
+
+            font-family: 'Georama', sans-serif;
+        }
+
+        #bg-image {
+            position: fixed;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background-image: url("./img/pattern.png");
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate3d(0, -50%, 0);
+            }
+
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .wrapper .footer {
+            font-size: 14px;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        .linha {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo img {
+            height: 5rem;
+        }
+
+        .titulo h1 {
+            color: whitesmoke;
+            font-size: 80px;
+            font-style: italic;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 300;
+            color: whitesmoke;
+        }
+
+        .botoes {
+            margin: 28px 0;
+        }
+
+        .botao:hover {
+            transform: scaleX(1.02);
+        }
+
+        .botoes a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .botao {
+            margin: 10px 0;
+            background-color: rgba(0, 0, 0, 0.658);
+            padding: 10px 60px;
+            border-radius: 50px;
+        }
+
+        .botao img {
+            width: 25px;
+        }
+
+        .botao:nth-child(3) img {
+            width: 20px;
+        }
+
+        .botao p {
+            margin-left: 10px;
+        }
+
+        .popup {
+            position: absolute;
+            padding: 10px 20px;
+            top: 0px;
+            left: 10px;
+            height: 139.67px;
+            width: 31%;
+            background: #F4F4F4;
+            box-shadow: 527px 437px 274px rgba(0, 0, 0, 0.01), 296px 246px 231px rgba(0, 0, 0, 0.05), 132px 109px 171px rgba(0, 0, 0, 0.09), 33px 27px 94px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 18px;
+            visibility: hidden;
+            transition: all 500ms ease-in;
+        }
+
+        #popup.aparece .popup {
+            display: block;
+            visibility: visible;
+
+            top: 10px;
+        }
+
+        .popup p {
+            margin-top: 7px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 133.4%;
+        }
+
+        .popup .linha {
+            justify-content: space-between;
+        }
+
+        .popup .linha .atencao {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 133.4%;
+            padding: 2px 25px;
+            color: #FF5400;
+            border: 1.6px solid #FF5400;
+            border-radius: 20px;
+        }
+
+        .popup .cinzinha {
+            margin-top: 0;
+
+            color: #7D7D7D;
+            font-style: italic;
+        }
+
+        .popup .linha img {
+            height: 25px;
+            cursor: pointer;
+        }
+
+        .direitos {
+            font-size: 12px;
+            text-align: center;
+            color: #F4F4F4;
+        }
+
+        .direitos .mb {
+            display: none;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .titulo h1 {
+                font-size: 60px;
+            }
+
+            .titulo img {
+                height: 3.2rem;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .botao p {
+                font-size: 18px;
+            }
+
+            .botao img {
+                height: 20px;
+            }
+
+            .wrapper .footer {
+                max-width: 80%;
+            }
+
+            .popup {
+                top: 0;
+                padding: 10px 20px;
+                left: 20px;
+                width: 80%;
+                height: 220px;
+            }
+
+            #popup.aparece .popup {
+                display: block;
+                visibility: visible;
+                top: 20px;
+            }
+
+            .popup .linha .atencao {
+                font-size: 16px;
+            }
+
+            .popup p {
+                font-size: 16px;
+            }
+
+            .direitos {
+                max-width: 80%;
+            }
+
+            .direitos .mb {
+                display: flex;
+            }
+        }
+
+        @media only screen and (min-width: 1700px) {
+            .titulo h1 {
+                font-size: 110px;
+            }
+
+            .titulo img {
+                height: 6rem;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .botao p {
+                font-size: 20px;
+            }
+
+            .botao img {
+                height: 30px;
+            }
+
+            .wrapper .footer {
+                font-size: 18px;
+            }
+
+            .popup {
+                height: 169.67px;
+            }
+
+            .popup .linha .atencao {
+                font-size: 18px;
+            }
+
+            .popup p {
+                font-size: 18px;
+            }
+
+            .direitos {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg-image">
+        <img src="./img/pattern.png" alt="pattern">
+        <img src="./img/pattern.png" alt="pattern">
+    </div>
+    <div class="wrapper">
+        <div class="titulo linha">
+            <img src="./img/logo.svg" alt="logo">
+            <h1>lejaum</h1>
+        </div>
+        <h2 class="subtitulo">agência de design e marketing</h2>
+        <div class="botoes">
+            <a href="https://lejaum.me" target="_blank" class="botao linha">
+                <img src="./img/browser-icon.svg" alt="icone">
+                <p>Portfólio</p>
+            </a>
+            <a href="https://wa.link/hwu2yd" target="_blank" class="botao linha">
+                <img src="./img/whatsapp-icon.svg" alt="icone">
+                <p>Whatsapp</p>
+            </a>
+            <a href="https://www.instagram.com/lejaum.me/" target="_blank" class="botao linha">
+                <img src="./img/instagram-icon.svg" alt="icone">
+                <p>Instagram</p>
+            </a>
+            <a href="mailto:head@lejaum.me" target="_blank" class="botao linha">
+                <img src="./img/email-icon.svg" alt="icone">
+                <p>E-mail</p>
+            </a>
+        </div>
+        <p class="direitos">Todos os direitos e esquerdos reservados: <br class="mb"> © Lejaum Marketing e Design LTDA
+            <br>
+            Site desenvolvido com 🤍 por nós mesmos, óbvio.
+        </p>
+    </div>
+
+    <div id="popup">
+        <div class="popup">
+            <div class="linha">
+                <p class="atencao">Atenção</p>
+                <img id="close-popup" src="./img/close-circle-icon.svg" alt="close-icon">
+            </div>
+            <p>
+                Se você está procurando uma agência que irá entregar a solução que você precisa... tem várias no
+                mercado. Mas cola com a gente que <strong>iremos alavancar suas vendas no online!</strong>
+            </p>
+            <p class="cinzinha">porque nós é diferenciado, tá ligado?</p>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var popup = document.getElementById('popup');
+    var closePopup = document.getElementById('close-popup');
+
+    window.addEventListener('DOMContentLoaded', timer);
+
+    function timer() {
+        setTimeout(abrePopup, 7000);
+    }
+
+    closePopup.addEventListener("click", fechaPopup);
+
+    function abrePopup() {
+        popup.classList.add("aparece")
+    }
+    function fechaPopup() {
+        popup.classList.remove("aparece")
+    }
+</script>
+
+</html>

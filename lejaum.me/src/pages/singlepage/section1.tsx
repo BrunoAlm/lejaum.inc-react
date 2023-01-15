@@ -18,7 +18,7 @@ export default function Section1({ id = "" }) {
                 {/* Botão de chamada que da scroll para o portfólio */}
                 <FilledButton
                     text='ver portfólio'
-                    href='#portfolio'
+                    href='#portfolio-sm'
                 />
             </div> {/* FINAL */}
         </>

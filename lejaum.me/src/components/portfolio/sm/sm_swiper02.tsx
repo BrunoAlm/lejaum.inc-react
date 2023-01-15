@@ -16,13 +16,13 @@ export default function SmSwiper02() {
     return (
         <Swiper
             slidesPerView={1.27}
-            spaceBetween={12.64}
+            // spaceBetween={12.64}
             loop={true}
             loopedSlides={10}
             className={'my-2 drop-shadow-card'}
             breakpoints={{
                 640: {
-                    slidesPerView: 5.4,
+                    slidesPerView: 5,
                 },
             }}
             autoplay={{ delay: 5000 }}
