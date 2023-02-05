@@ -36,7 +36,7 @@ export default function Home() {
       <Section1 id='#' />
       <Section2 id='portfolio-sm' />
       <Section3 id='portfolio-id' />
-      <Section4 id='solucoes' />
+      {/* <Section4 id='solucoes' /> */}
       <Section5 id='avaliacoes' />
     </>
   )

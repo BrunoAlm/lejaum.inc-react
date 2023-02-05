@@ -6,7 +6,7 @@ export default function Section2({ id = "" }) {
     return (
         <>
             {/* Início do portfolio de social media */}
-            <div id={id} className="h-full w-full bg-pretao py-8">
+            <div id={id} className="h-full pt-20 w-full bg-pretao py-8">
                 <p className="text-home font-black text-laranjaum text-center font-georama">Social Media</p>
                 <p className="text-body2 text-branquin text-center font-georama">Toque para visualizar em tela cheia</p>
                 {/* wrapper de varios swipers */}

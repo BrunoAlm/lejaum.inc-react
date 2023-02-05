@@ -13,7 +13,7 @@ export default function CardSwiper() {
 
     return (
         <Swiper
-            slidesPerView={1.25}
+            slidesPerView={1.18}
             autoplay={{ delay: 5000 }}
             loop={true}
         >

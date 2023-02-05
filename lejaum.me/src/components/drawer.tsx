@@ -5,7 +5,7 @@ import Logo from "./logo";
 
 export default function TopbarDrawer({ drawerAberto = false, AbreDrawer = () => { } }) {
     return <>
-        <div className='flex  '>
+        <div className='flex'>
             <div className={`fixed z-[10000] gap-[22px] top-0 right-0 transform transition-all duration-500 ${drawerAberto ? 'w-[70%] sm:w-[50%]' : 'w-0 h-0'} bg-branquin dark:bg-pretao h-full flex flex-col items-center justify-center`}>
                 <Logo />
                 <BorderButton href='#' text='Início' onClick={AbreDrawer} />
